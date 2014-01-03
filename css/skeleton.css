@@ -1,0 +1,131 @@
+html {
+    background: #eee;
+}
+
+a {
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+/* Lets add an arrow after each link */
+a:after {
+    padding-left:2px; /* Add a little space between text and arrow */
+    content: "\00bb"; /* Unicode hex for &raquo; */
+}
+
+li {list-style-type:none;}
+
+div#history-scroll-list
+{
+    height:500px;
+    overflow:auto;
+    padding: 10px 10px 10px 20px;
+    box-shadow: 0px 2px 5px #ccc inset;
+    background: #eaeaea;
+}
+
+div#history-scroll-bottom {
+    height:10px;
+    background: #ddd;
+}
+
+div#history-scroll-bottom, aside h4 {
+    border-color: #ececec #dadada #cfcfcf;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0px 2px 4px #ccc;
+}
+
+* {
+font-family: 'Lato', sans-serif;
+margin: 0;
+padding: 0;
+color: #666;
+}
+
+body {
+    width: 900px;
+    margin: 0 auto;
+}
+
+body header, body aside h4 {
+    background: #dddddd;
+    padding: 10px 10px 10px 20px;
+}
+
+body header {
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 2px 4px #ccc;
+    border-color: #ececec #dadada #cfcfcf;
+    border-width: 1px;
+    border-style: solid;
+}
+
+body aside h4 {
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px 0px 5px 15px;
+}
+
+body header {
+    margin-bottom: 20px;
+}
+
+body footer {
+    position: fixed;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 2px 4px #ccc;
+    border-color: #ececec #dadada #cfcfcf;
+    border-width: 1px;
+    border-style: solid;
+    height: 20px;
+    width: 900px;
+    bottom: 0px;
+    background: #ccc;
+}
+
+#history-menu {
+    width: 300px;
+    float: right;
+}
+
+#article-shadow {
+    box-shadow: 0px 0px 5px #ccc;
+    margin-right: 320px;
+}
+
+article {
+    padding: 20px;
+    background: #f8f8f8;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 20px #ddd inset;
+}
+
+article .title-ribbon {
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px -1px 0px rgba(0, 0, 0, 0.3) inset;
+    display: table;
+    padding: 5px 30px;
+    left: -30px;
+    position: relative;
+    background: linear-gradient(to bottom, #888 0%, #444 100%);
+}
+
+article .title-ribbon h2 {
+    color: #eee;
+}
+
+.title-ribbon:before {
+    content: "";
+    border-color: transparent #aaa #aaa transparent;
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    border-style: solid;
+    border-width: 5px;
+    width: 0px;
+    height: 0px;
+    z-index: -1;
+}

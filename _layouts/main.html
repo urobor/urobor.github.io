@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/skeleton.css">        
+    </head>
+    <body>
+        <header>
+            <h1> Sandbox </h1>
+            <a href="/index.html">home</a>
+        </header>
+        
+        <aside id="history-menu">
+            <h4> History </h4>
+            <div id="history-scroll-list">
+                <ul>
+                    {% for post in site.posts %}
+                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div id="history-scroll-bottom"/>
+        </aside>
+        <div id="article-shadow">
+            <article>
+                {{ content }}
+            </article>
+        </div>
+        <footer>
+            
+        </footer>
+    </body>
+</html>
