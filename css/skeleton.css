@@ -135,3 +135,7 @@ article .title-ribbon h2 {
     height: 0px;
     z-index: -1;
 }
+
+code {
+    background: white;
+}
