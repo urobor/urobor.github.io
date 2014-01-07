@@ -10,12 +10,13 @@ I've decided to use standard firefox widget for that purpose.
 
 The downside of this approach is that (at least in firefox 26) there
 is no way to set initial location of widget icon. Default location
-is lower right corner and I would like to place it next to download 
-button/icon.
+is lower right corner. Obviously I would like to place it next to download 
+button/icon. Of course when I find solution I will post it here.
 
-Lets assume that the icon will have three states:
+Nevertheless, lets assume that the icon will have three states (at least for
+now):
 
-- there is no possible download on page - grey icon,
+- there is no possible download on page - gray icon,
 - tab currently being watched contain youtube player - red icon,
 - displayed video is already downloade in at least one quality version - green icon.
 
@@ -50,7 +51,7 @@ Code showed above places gray download icon in the lower right corner
 of the browser - the bottom addon bar. When in currently displayed tab url 
 matches given regexp - `/www\.youtube\..*\/watch\?v=/` - icon changes its
 color to red. It means that user can click the icon and chose desired
-quality version of the video to download. Which obviusly don't work yet.
+quality version of the video to download. Which obviusly doesn't work yet.
 
 See next part, wher I shall add popup panel when the icon is red.
 
