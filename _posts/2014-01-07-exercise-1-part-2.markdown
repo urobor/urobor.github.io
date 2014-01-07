@@ -37,7 +37,7 @@ var widget = require("sdk/widget").Widget({
 function updateWidgetState(tab) {
     var view = widget.getView(tab.window);
     if (!view) return;
-    // Update widget displayed text:
+    // Update widget displayed icon
     view.contentURL = tab.url.match(/www\.youtube\..*\/watch\?v=/) ? 
         data.url("down-arrow-red.png") : data.url("down-arrow-gray.png");
 }
