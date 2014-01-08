@@ -37,15 +37,22 @@ div#history-scroll-bottom {
 
 
 * {
-font-family: 'Lato', sans-serif;
 margin: 0;
 padding: 0;
-color: #444;
 }
 
-body {
+html {
+font-family: 'Lato', sans-serif;
+color: #444;
+}
+.center {
     width: 900px;
     margin: 0 auto;
+}
+
+header, header a {
+    background: #2E75B6;
+    color: white;
 }
 
 body header, body aside h4 {
@@ -73,11 +80,9 @@ body footer {
     float: right;
 }
 
-#article-shadow {
-    margin-right: 270px;
-}
 
 article {
+    margin-right: 270px;
     padding: 20px;
     margin-bottom: 50px;
 }
