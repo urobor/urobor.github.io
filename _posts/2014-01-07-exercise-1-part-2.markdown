@@ -53,5 +53,8 @@ matches given regexp - `/www\.youtube\..*\/watch\?v=/` - icon changes its
 color to red. It means that user can click the icon and chose desired
 quality version of the video to download. Which obviusly doesn't work yet.
 
-See next part, wher I shall add popup panel when the icon is red.
+Next parts will be about:
 
+- using addon properties (paths to download dir and data file)
+- checking if given directory exists
+- checking if give file exists and reading its content line by line
