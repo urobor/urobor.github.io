@@ -55,6 +55,6 @@ quality version of the video to download. Which obviusly doesn't work yet.
 
 Next parts will be about:
 
-- using addon properties (paths to download dir and data file)
+- using addon properties (paths representing download dir and data file)
 - checking if given directory exists
 - checking if give file exists and reading its content line by line
