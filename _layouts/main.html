@@ -1,35 +1,36 @@
 <html>
-    <head>
-        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="/css/skeleton.css">
-	<link rel="stylesheet" href="/css/syntax.css">        
-    </head>
-    <body>
-        <header>
-            <div class="center">
-                <h1> Sandbox </h1>
-                <a href="/index.html">home</a>
-            </div>
-        </header>
-        
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/skeleton.css">
+<link rel="stylesheet" href="/css/syntax.css">        
+</head>
+<body>
+    <header>
         <div class="center">
-            <aside id="history-menu">
-                <h4> History </h4>
-                <div id="history-scroll-list">
-                    <ul>
-                        {% for post in site.posts %}
-                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div id="history-scroll-bottom"/>
-                </aside>
-                <article>
-                    {{ content }}
-                </article>
+            <h1> Sandbox </h1>
+            <a href="/index.html">home</a>
+        </div>
+    </header>
+
+    <div class="center">
+        <aside id="history-menu">
+            <h4> History </h4>
+            <div id="history-scroll-list">
+                <ul>
+                    {% for post in site.posts %}
+                    <li>
+                        <a href="{{ post.url }}">
+                            <span class="date">{{post.date | date: "%y %b %d"}}</span> {{ post.title }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
-        <footer>
-            
-        </footer>
-    </body>
+            <div id="history-scroll-bottom"/>
+        </aside>
+        <article>
+            {{ content }}
+        </article>
+    </div>
+</body>
 </html>

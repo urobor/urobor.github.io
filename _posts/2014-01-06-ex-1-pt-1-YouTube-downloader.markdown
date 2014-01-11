@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Exercise 1 - YouTube Downloader"
+title:  "Ex 1 Pt 1 - YouTube Downloader"
 date:   2014-01-06 18:27:00
 categories: youtube browser-plugin firefox chrome
 ---
