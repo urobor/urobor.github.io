@@ -2,39 +2,41 @@
 layout: post
 title:  "Ex 1 Pt 3 - Design"
 date:   2014-01-12 20:15:00
-categories: youtube browser-plugin firefox widget
+categories: YouTube browser-plugin Firefox widget
 ---
 
 According to previous post, today I should write something about:
 
-- using addon properties (paths representing download dir and data file)
+- using add-on properties (paths representing download dir and data file)
 - checking if given directory exists
-- checking if give file exists and reading its content line by line
+- checking if given file exists and reading its content line by line
 
-but the concept changed a little bit and now addon would just mark videos 
+but the concept changed a little bit and now add-on would just mark videos 
 to download. 
 
 Recently (actually couple of months ago) I found a cli 
-program that deals with downloading videos from youtube. It is written
-in python and as an input it needs the url of the video and optionally 
+program that deals with downloading videos from YouTube. It is written
+in python and as an input it needs the URL of the video and optionally 
 an itag - which by the way will suits our need. As the mentioned program is
 under heavy development and up to date I will skip the implementation 
-of 'download' functionality in my addon.
+of 'download' functionality in my add-on.
 
 Today instead of source code I will post and overall design. What is
-the desired functionality of addon being developed.
+the desired functionality of add-on being developed.
 
-Sticking to the KISS principle, I shall implenent only necessery
+Sticking to the KISS principle, I shall implement only necessary
 functionality and as easy and straight forward ass possible.
 
-![Design image](/img/ex-1-pt-2-activity-diagram-1.png "Design - function invoked on every possible event occurrence")
+![Design image](/img/ex-1-pt-2-activity-diagram-1.png
+"Design - function invoked on every possible event occurrence")
 
-As showne above addon will be mainly about marking the videos to download.
+As shown above add-on will be mainly about marking the videos to download.
 Not actually downloading them. 
 
 Events that invokes function showed on picture above will be:
 
 - tab switch/change, new tab, overall change focus of displayed tab,
-- page relod, new page, content and overall url change.
+- page reload, new page, content and overall URL change.
 
-So summing up function should be executed on every url change of tab currently being displayed.
+So summing up function should be executed on every URL change of tab
+currently being displayed.

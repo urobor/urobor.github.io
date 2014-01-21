@@ -2,7 +2,7 @@
 layout: post
 title:  "Ex 1 Pt 1 - YouTube Downloader"
 date:   2014-01-06 18:27:00
-categories: youtube browser-plugin firefox chrome
+categories: YouTube browser-plugin Firefox chrome
 ---
 
 As a part of my current activities I've decided to develop some simple
@@ -17,16 +17,16 @@ with the video),
   - show list of downloaded versions,
 - allow user to download other (not downloaded yet) versions.
 
-First approach was about changing the YouTube html content and adding
+First approach was about changing the YouTube HTML content and adding
 some menu bar representing status and available versions. Below screen
 from not downloaded yet video.
 
 ![Menu element image](/img/ex-1-pt1-old-dwn-clean-vid.png "Clean video downloader v.0.1")
 
 The main problem with that approach was the YouTube page itself. As not very
-expirienced with dynamic web content, "page" was simply deleting added html 
+experienced with dynamic web content, "page" was simply deleting added HTML 
 content. Quickest workaround was setting the delay of DOM modifications 
-to x (actually 8) secounds, which was to long to wait for download status
+to x (actually 8) seconds, which was to long to wait for download status
 icon to show up (ugly and simply unacceptable). Final version will be using
 only browser UI: panel, menu bar, etc.
 
@@ -36,6 +36,6 @@ of the video already downloaded.
 ![Menu element image](/img/ex-1-pt1-old-dwn-downloaded-vid.png "Already downloaded example")
 
 
-This kind of functionality will be transfered to version with UI based on
+This kind of functionality will be transferred to version with UI based on
 browser build-in widgets and panels. See part-2.
 

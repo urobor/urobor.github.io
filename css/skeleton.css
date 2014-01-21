@@ -108,4 +108,5 @@ img {
     margin: 0 auto;
     display: block;
     box-shadow: 0px 0px 4px #ddd;
+    max-width:650px;
 }
