@@ -2,7 +2,7 @@
 layout: post
 title:  "Ex 1 Pt 1 - YouTube Downloader"
 date:   2014-01-06 18:27:00
-categories: YouTube browser-plugin Firefox chrome
+tag: youtube-download-firefox-plugin
 ---
 
 As a part of my current activities I've decided to develop some simple

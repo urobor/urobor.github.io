@@ -2,7 +2,7 @@
 layout: post
 title:  "Ex 1 Pt 4 - Summary"
 date:   2014-01-21 20:50:00
-categories: YouTube browser-plugin Firefox widget
+tag: youtube-download-firefox-plugin
 ---
 
 My adventure with writing YouTube video downloading plugins

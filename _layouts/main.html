@@ -1,33 +1,48 @@
 <html>
 <head>
-<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/css/skeleton.css">
 <link rel="stylesheet" href="/css/syntax.css">        
 </head>
 <body>
     <header>
-        <div class="center">
-            <h1> Sandbox </h1>
-            <a href="/index.html">home</a>
+        <div class="side">
+            <h1>
+              <a href='/index.html'> Sandbox </a>
+            </h1>
+            {% for tag in site.tags %}
+            {% assign tagname = tag[0] | strip %}
+            {% assign posts = site.tags[tagname] | sort %}
+            {% assign link = tagname | split: "-" | join " " %}
+            {% for post in posts limit:1 %}
+            <h3>
+              <div class='group-button'>
+                <a href="{{ post.url }}">
+            {% endfor %}
+                  {{ link }}
+                </a>
+              </div></h3>
+              {% if page.tag == tagname and site.tags[page.tag].size > 0 %}
+              {% assign posts = site.tags[page.tag] | sort %}
+              <div class='group-links'>
+                <ul>
+                  {% for post in posts %}
+                  <li>
+                  <a href="{{ post.url }}">
+                      <span class="date">{{post.date | date: "%y %b %d"}}</span> {{ post.title }}
+                  </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+             </div>
+    </div>
+{% endif %}
+            {% endfor %}
         </div>
     </header>
 
     <div class="center">
-        <aside id="history-menu">
-            <h4> History </h4>
-            <div id="history-scroll-list">
-                <ul>
-                    {% for post in site.posts %}
-                    <li>
-                        <a href="{{ post.url }}">
-                            <span class="date">{{post.date | date: "%y %b %d"}}</span> {{ post.title }}
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div id="history-scroll-bottom"/>
-        </aside>
         <article>
             {{ content }}
         </article>
