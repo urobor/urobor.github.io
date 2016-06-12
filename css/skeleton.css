@@ -1,149 +1,1 @@
-p {
-    margin: 15px 0px;
-}
-
-a {
-    color: #2E75B6;
-    text-decoration:none;
-}
-
-.group-button a {
-    background: transparent;
-    color: #eee;
-}
-
-.group-button {
-    padding: .65em 0em .55em;
-}
-
-.group-links a, .group-links{
-    background: transparent;
-    color: #555;
-}
-
-.group-links {
-    background: #eee;
-    box-shadow: 3px 3px 10px 0px #333 inset;
-    border-bottom: solid #74ACD4 1px;
-    border-top: solid #1B61A2 1px;
-}
-
-a:hover {
-    text-shadow: 0px 0px 1px #2E75B6;
-}
-
-aside li { list-style-type:none; }
-
-article li { margin-left: 20px; }
-
-div#history-scroll-list
-{
-    height:500px;
-    overflow:auto;
-}
-
-
-* {
-margin: 0;
-padding: 0;
-}
-
-html {
-font: normal 100%/1.625 Source Sans Pro,Arial,sans-serif;
-color: #444;
-}
-.center {
-    width: 55%;
-    margin: 0 auto;
-}
-
-header {
-    position: fixed;
-    top: 0px;
-    height: 100%;
-    overflow: scroll;
-    width: 20%;
-}
-
-header, header a {
-    background: #3776ab;
-    color: white;
-    font-weight: normal;
-    text-align: center;
-}
-
-header a:hover {
-    text-shadow: 0px 0px 10px white;
-}
-
-body header {
-    padding: 10px 0px;
-    background-image: linear-gradient(#1e415e 5%,#2b5b84 90%);
-}
-
-body aside h4 {
-    margin-top: 8px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #eee;
-}
-
-.side h1 {
-    padding: .05em 0em .25em;
-    background-image: linear-gradient(rgb(55, 118, 171) 30%, rgb(45, 97, 140) 95%);
-    border-top: 1px solid #629ccd;
-    border-bottom: 1px solid #18334b;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-h1 a {
-    background: transparent;
-}
-
-body aside .date {
-    position: relative;
-    font-size: 0.5em;
-    top: -2px;
-}
-
-body header {
-    margin-bottom: 40px;
-}
-
-#history-menu {
-    width: 280px;
-    float: right;
-}
-
-
-article {
-    margin-bottom: 50px;
-}
-
-h2 {
-    float: left;
-}
-
-p.meta {
-    position: relative;
-    text-align: right;
-    top: 8px;
-    right: 20px;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    border-bottom: 1px solid #eee;
-}
-
-pre {
-    padding-left: 20px;
-    margin: 20px 0px;
-    border-left: 2px solid #bbb;
-}
-
-img {
-    border-radius: 10px;
-    border: 2px solid #ddd;
-    margin: 0 auto;
-    display: block;
-    box-shadow: 0px 0px 4px #ddd;
-    max-width:650px;
-}
+p {    margin: 15px 0px;}a {    color: #2E75B6;    text-decoration:none;}.title-ribbon {    font-family: Lato;}.group-button a {    background: transparent;    color: #eee;    font-family: Lato;}.group-button {    padding: .65em 0em .55em;}.group-links a, .group-links{    background: transparent;    color: #555;}.group-links {    background: #eee;    box-shadow: 3px 3px 10px 0px #333 inset;    border-bottom: solid #74ACD4 1px;    border-top: solid #1B61A2 1px;    text-align: left;    padding: 10px 0px 10px 15px;    list-style-type: none;}a:hover {    text-shadow: 0px 0px 1px #2E75B6;}aside li, .group-links li { list-style-type:none; }article li { margin-left: 20px; }div#history-scroll-list{    height:500px;    overflow:auto;}* {margin: 0;padding: 0;}html {font: normal 100%/1.625 Source Sans Pro,Arial,sans-serif;color: #444;}.center {    width: 55%;    margin: 0 auto;}header {    position: fixed;    top: 0px;    height: 100%;    overflow: hidden;    width: 20%;}header, header a {    background: #3776ab;    color: white;    font-weight: normal;    text-align: center;}header a:hover {    text-shadow: 0px 0px 10px white;}body header {    padding: 10px 0px;    background-image: linear-gradient(#1e415e 5%,#2b5b84 90%);}body aside h4 {    margin-top: 8px;    margin-bottom: 10px;    border-bottom: 1px solid #eee;}.side h1 {    padding: .05em 0em .25em;    background-image: linear-gradient(rgb(55, 118, 171) 30%, rgb(45, 97, 140) 95%);    border-top: 1px solid #629ccd;    border-bottom: 1px solid #18334b;    box-shadow: 0 0 10px rgba(0,0,0,0.2);}h1 a {    background: transparent;}body aside .date {    position: relative;    font-size: 0.5em;    top: -2px;}body header {    margin-bottom: 40px;}#history-menu {    width: 280px;    float: right;}article {    margin-bottom: 50px;}h2 {    float: left;}p.meta {    position: relative;    text-align: right;    top: 8px;    right: 20px;    margin-bottom: 40px;    margin-left: 20px;    border-bottom: 1px solid #eee;}pre {    padding-left: 20px;    margin: 20px 0px;    border-left: 2px solid #bbb;}img {    border-radius: 10px;    border: 2px solid #ddd;    margin: 0 auto;    display: block;    box-shadow: 0px 0px 4px #ddd;    max-width:650px;}

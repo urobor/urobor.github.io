@@ -20,7 +20,7 @@
               <div class='group-button'>
                 <a href="{{ post.url }}">
             {% endfor %}
-                  {{ link }}
+                  {{ link | truncate: 25}}
                 </a>
               </div></h3>
               {% if page.tag == tagname and site.tags[page.tag].size > 0 %}
