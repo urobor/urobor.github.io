@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Left menu rework (1)"
+date:   2017-07-30 10:28:00
+tag: left-menu-rework
+---
+
+Just to keep in mind the look'n'feel of the 
+old menu this the screenshot of it 
+at the state when the rework has begun.
+
+![Original Left Menu](/img/original-left-menu.png
+"Original left hand side menu")
+
+[Placeholder] Here there would be screenshot of new menu
+(after rework).
