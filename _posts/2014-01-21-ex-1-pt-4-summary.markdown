@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ex 1 Pt 4 - Summary"
+title:  "4 - Summary"
 date:   2014-01-21 20:50:00
 tag: youtube-download-firefox-plugin
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ex 1 Pt 1 - YouTube Downloader"
+title:  "1 - YouTube Downloader"
 date:   2014-01-06 18:27:00
 tag: youtube-download-firefox-plugin
 ---
