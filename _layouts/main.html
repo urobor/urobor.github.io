@@ -28,9 +28,10 @@
 		{% assign tagname = tag | split:":" | last | strip %}
 		{% assign posts = site.tags[tagname] | sort %}
 	        {% assign link = tagname | split: "-" | join " " %}
+		{% if page.tag == tagname and site.tags[page.tag].size > 0 %}
 		{% for post in posts limit:1 %}
 		<h3>
-		    <div class='group-button'>
+		    <div class='group-button' id='selected'>
 		        <a href="{{ post.url }}">
 		        <span class="year">{{post.date | date: "%Y" }}</span>
 		        {{ link | truncate: 25}}
@@ -38,7 +39,6 @@
 		    </div>
 		</h3>
 	        {% endfor %}
-		{% if page.tag == tagname and site.tags[page.tag].size > 0 %}
 		{% assign posts = site.tags[page.tag] | sort %}
 		<div class='group-links'>
 		    <ul>
@@ -55,6 +55,17 @@
 		        {% endfor %}
 		    </ul>
 		</div>
+                {% else %}
+		{% for post in posts limit:1 %}
+		<h3>
+		    <div class='group-button'>
+		        <a href="{{ post.url }}">
+		        <span class="year">{{post.date | date: "%Y" }}</span>
+		        {{ link | truncate: 25}}
+		        </a>
+		    </div>
+		</h3>
+	        {% endfor %}
 		{% endif %}
 		{% endfor %}
             </div>
