@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Left menu rework (2)"
-date:   2026-04-27 00:54:00
-tag: left-menu-rework
+date:   2026-04-26 21:38:00
+tag: left-menu-rework-2
 ---
 
 Just to keep in mind the look'n'feel of the 
