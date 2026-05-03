@@ -6,71 +6,70 @@
 <link rel="stylesheet" href="/css/syntax.css">        
 </head>
 <body>
-    <header>
-        <div class="side">
-            <h1>
-              <a href='/index.html'> sandbox </a>
-            </h1>
-            <div>
-{% capture dates_with_tags_string %}
-    {% for tag in site.tags %}
-        {% assign tagname = tag[0] | strip %}
-        {% assign posts = site.tags[tagname] | sort %}
-        {% for post in posts limit:1 %}
-            {{ post.date }}:{{ tag[0] }}
-        {% endfor %}
-        {% unless forloop.last %},
-        {% endunless %}
-    {% endfor %}
-{% endcapture %}
-                {% assign dates_with_tags = dates_with_tags_string | split:"," | sort | reverse %}
-		{% for tag in dates_with_tags %}
-		{% assign tagname = tag | split:":" | last | strip %}
-		{% assign posts = site.tags[tagname] | sort %}
-	        {% assign link = tagname | split: "-" | join " " %}
-		{% if page.tag == tagname and site.tags[page.tag].size > 0 %}
-		{% for post in posts limit:1 %}
-		<h3>
-		    <div class='group-button' id='selected'>
-		        <a href="{{ post.url }}">
-		        <span class="year">{{post.date | date: "%Y" }}</span>
-		        {{ link | truncate: 25}}
-		        </a>
-		    </div>
-		</h3>
-	        {% endfor %}
-		{% assign posts = site.tags[page.tag] | sort %}
-		<div class='group-links'>
-		    <ul>
-		        {% for post in posts %}
-		        <li><a href="{{ post.url }}">
-		            <span class="date">
-		                <span class="month">
-		                    <span>{{post.date | date: "%b"}}</span>
-		                </span>
-		                <span class="day">{{post.date | date: "%d"}}</span>
-		            </span> 
-		            <span class="posttitle">{{ post.title }}</span>
-		        </a></li>
-		        {% endfor %}
-		    </ul>
+	<div class="menu">
+		<div class='menu-header'>
+			<a href='/index.html'> sandbox </a>
 		</div>
-                {% else %}
-		{% for post in posts limit:1 %}
+		<div>
+			{% capture dates_with_tags_string %}
+				{% for tag in site.tags %}
+					{% assign tagname = tag[0] | strip %}
+					{% assign posts = site.tags[tagname] | sort %}
+					{% for post in posts limit:1 %}
+						{{ post.date }}:{{ tag[0] }}
+					{% endfor %}
+					{% unless forloop.last %},
+					{% endunless %}
+				{% endfor %}
+			{% endcapture %}
+			{% assign dates_with_tags = dates_with_tags_string | split:"," | sort | reverse %}
+	{% for tag in dates_with_tags %}
+	{% assign tagname = tag | split:":" | last | strip %}
+	{% assign posts = site.tags[tagname] | sort %}
+	{% assign link = tagname | split: "-" | join " " %}
+	{% if page.tag == tagname and site.tags[page.tag].size > 0 %}
+	{% for post in posts limit:1 %}
 		<h3>
-		    <div class='group-button'>
-		        <a href="{{ post.url }}">
-		        <span class="year">{{post.date | date: "%Y" }}</span>
-		        {{ link | truncate: 25}}
-		        </a>
-		    </div>
+			<div class='group-button' id='selected'>
+				<a href="{{ post.url }}">
+				<span class="menu-year">{{post.date | date: "%Y" }}</span>
+				{{ link | truncate: 25}}
+				</a>
+			</div>
 		</h3>
-	        {% endfor %}
-		{% endif %}
+	{% endfor %}
+	{% assign posts = site.tags[page.tag] | sort %}
+	<div class='group-links'>
+		<ul>
+			{% for post in posts %}
+			<li><a href="{{ post.url }}">
+				<span class="date">
+					<span class="month">
+						<span>{{post.date | date: "%b"}}</span>
+					</span>
+					<span class="day">{{post.date | date: "%d"}}</span>
+				</span> 
+				<span class="posttitle">{{ post.title }}</span>
+			</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	{% else %}
+		{% for post in posts limit:1 %}
+			<h3>
+				<div class='group-button'>
+					<a href="{{ post.url }}">
+					<span class="menu-year">{{post.date | date: "%Y" }}</span>
+					{{ link | truncate: 25}}
+					</a>
+				</div>
+			</h3>
 		{% endfor %}
-            </div>
-        </div>
-    </header>
+	{% endif %}
+	{% endfor %}
+		</div>
+	</div>
+	<p>{{ dates_with_tags_string }}</p>
 
     <div class="center">
         <article>
