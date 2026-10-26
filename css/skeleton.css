@@ -6,6 +6,9 @@
     --neon: #ffe94d;
     --neon-glow: #ff9d00;
 
+    --menu-w: 300px;
+    --column-w: 880px;
+
     --gloss: linear-gradient(to bottom,
         rgba(255,255,255,0.28) 0%, rgba(255,255,255,0.08) 48%,
         rgba(0,0,0,0.10) 52%, rgba(0,0,0,0.30) 100%);
@@ -40,8 +43,8 @@ p {
 .center {
 
     max-width: 800px;
-    margin-left: 300px;
-    margin-top: 200px;
+    margin-left: calc(max(0px, 50% - (var(--menu-w) + var(--column-w)) / 2) + var(--menu-w));
+    margin-top: 25px;
     padding: 0 40px;
 }
 
@@ -66,7 +69,7 @@ p.meta {
     text-align: right;
     top: 8px;
     right: 20px;
-    margin: 0 0 40px 20px;
+    margin: 0 0 155px 20px;
     border-bottom: 1px solid #eee;
 }
 
@@ -90,7 +93,8 @@ img {
 header {
     position: fixed;
     top: 0;
-    width: 300px;
+    left: max(0px, calc(50% - (var(--menu-w) + var(--column-w)) / 2));
+    width: var(--menu-w);
     height: 100%;
     overflow: hidden;
     padding: 10px 0;
