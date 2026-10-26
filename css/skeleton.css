@@ -1,7 +1,7 @@
 :root {
-    --bar-top: #3d566b;
-    --bar-bottom: #26394a;
-    --bar-edge: #232f3b;
+    --bar-top: #525530;
+    --bar-bottom: #67825b;
+    --bar-edge: #5c762b;
     --badge: #886647;
     --neon: #ffe94d;
     --neon-glow: #ff9d00;
@@ -211,7 +211,7 @@ header {
 .group-links a {
     display: flex;
     align-items: center;
-    padding: 4px 8px;
+    padding: 1px 5px 5px 20px;
     color: #555;
 }
 
