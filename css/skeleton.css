@@ -2,7 +2,7 @@
     --bar-top: #3d566b;
     --bar-bottom: #26394a;
     --bar-edge: #232f3b;
-    --badge: #c95637;
+    --badge: #886647;
     --neon: #ffe94d;
     --neon-glow: #ff9d00;
 
@@ -124,7 +124,7 @@ header {
 .group-name {
     flex: 1;
     min-width: 0;
-    padding: 6px 0;
+    padding: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -153,12 +153,11 @@ header {
 
 .year {
     align-self: stretch;
-    margin-right: 10px;
-    padding: 0 4px;
+    padding: 2 4 0 0px;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-align: center;
-    font-size: 0.72rem;
+    font-size: 0.62rem;
     line-height: 1.4;
 }
 
@@ -235,13 +234,13 @@ header {
     padding: 1px 0;
     background: var(--badge);
     color: #fff;
-    font-size: 0.68rem;
+    font-size: 0.5rem;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .day {
-    padding: 2px 0;
+    padding: 0px 0;
     background: #fff;
     font-size: 1.02rem;
     font-weight: bold;
