@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Left menu rc1"
+date:   2026-10-26 22:41:00
+tag: left-menu-rework-2
+---
+
+Finally after 10 years there is a first 
+release candidate for the menu. 
+
+![3rd version of the Left Menu - 1st release candidate](/img/menu-rc1.png
+"3rd version of the left hand side menu (1st release candidate)")
+
+There are still some issues with it but the shape can 
+and probably will be kept for now at least ;)
