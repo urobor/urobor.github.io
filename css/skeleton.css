@@ -1,1 +1,248 @@
-p {    margin: 15px 0px;}a {    color: #2E75B6;    text-decoration:none;}.title-ribbon {    font-family: Lato;}.group-button a {    background: transparent;color: #274763;font-family: Arial;font-weight: 900;}#selected a, #selected a .year, .side h1 a{    color: #fffac4;    text-shadow: 0px 0px 5px #ff5;}#selected a {    font-family: Lato;}.group-links a, .group-links{    background: transparent;    color: #555;text-shadow: 1px 1px 10px #456;}.group-links {    background-image: linear-gradient(to right, #c2ccd5 20%, #fff 100%);    box-shadow: 2px 2px 8px 0px #444 inset;border-bottom: solid #3974a5 2px;    text-align: left;padding: 10px 0px 5px 0px;    list-style-type: none;margin-bottom: 5px;border-left: #3974a5 18px solid;}.posttitle:hover {    text-shadow: 0px 0px 10px white;}aside li, .group-links li { list-style-type:none; }article li { margin-left: 20px; }div#history-scroll-list{    height:500px;    overflow:auto;}* {margin: 0;padding: 0;}html {font: normal 100%/1.625 Source Sans Pro,Arial,sans-serif;color: #444;}.center {    width: 50%;    margin: 0 auto;}header {    position: fixed;    top: 0px;    height: 100%;    overflow: hidden;    width: 21%;}header, header a {    background: #3776ab;    color: white;    font-weight: normal;    text-align: center;}body header {    padding: 10px 0px;    background: #2b5b84;}body aside h4 {    margin-top: 8px;    margin-bottom: 10px;    border-bottom: 1px solid #eee;}.side h1 {    padding: .05em 0em .25em;    background-image: linear-gradient(rgb(55, 118, 171) 30%, rgb(45, 97, 140) 95%);    border-top: 1px solid #508abb;    box-shadow: 0 0 10px rgba(0,0,0,0.2);margin-bottom: 10px;}h1 a {    background: transparent;}body aside .date {    position: relative;    font-size: 0.5em;    top: -2px;}li a .date .month span {top: -4px;position: relative;font-size: 1.8em;}li a .date {	display: block;    float: left;    background: transparent;    width: 28px;    height: 20px;	margin-right: 10px;	box-shadow: 0px 2px 5px #aaa;margin-left: 10px;}li a .date .month {color: white;text-transform: uppercase;background: #c95637;float: left;position: relative;height: 10px;font-size: 0.4em;width: 28px;	z-index: 2;font-weight: bold;}li a .date .day {background: white;float: left;top: -6px;position: relative;font-size: 0.95em;height: 20px;padding: 0px;width: 28px;}li a span .day {    text-shadow: 1px 1px 1px #d9d9d9;}li a span .day {    text-shadow: 1px 1px 1px #d9d9d9;}.year {display: block;float: left;transform: rotate(270deg);padding: 0px 4px;margin-top: 9px;font-weight: 900;color: rgb(48, 86, 117);font-size: 0.55em;width: 28px;height: 18px;text-shadow: 1px 2px 1px #3873a5, 0px 0px 0px #000, 1px 2px 1px #3873a5;font-family: Arial;background: #3974a5;margin-left: -9px;}#yearholder {width: 16px;background: #1c3b57;display: block;height: 100%;float: left;background-image: linear-gradient(rgb(45, 97, 140) 30%, #2b5b84 95%);margin-top: -10px;}body header {    margin-bottom: 40px;}#history-menu {    width: 280px;    float: right;}article {    margin-bottom: 50px;}h2 {    float: left;}div.side h3 {    text-align: left;background-image: linear-gradient(to right, #3974a5 0%, #3974a5 5%, #346994 15%, #316490 70%, #3974a5 100%);margin-top: 2px;height: 36px;border-top: #3872a5 1px solid;}p.meta {    position: relative;    text-align: right;    top: 8px;    right: 20px;    margin-bottom: 40px;    margin-left: 20px;    border-bottom: 1px solid #eee;}pre {    padding-left: 20px;    margin: 20px 0px;    border-left: 2px solid #bbb;}img {    border-radius: 10px;    border: 2px solid #ddd;    margin: 0 auto;    display: block;    box-shadow: 0px 0px 4px #ddd;    max-width:650px;}
+:root {
+    --bar-top: #3d566b;
+    --bar-bottom: #26394a;
+    --bar-edge: #232f3b;
+    --badge: #c95637;
+    --neon: #ffe94d;
+    --neon-glow: #ff9d00;
+
+    --gloss: linear-gradient(to bottom,
+        rgba(255,255,255,0.28) 0%, rgba(255,255,255,0.08) 48%,
+        rgba(0,0,0,0.10) 52%, rgba(0,0,0,0.30) 100%);
+    --bevel: inset 0 1px 0 rgba(255,255,255,0.35),
+        inset 0 -3px 4px rgba(0,0,0,0.30),
+        0 3px 5px rgba(0,0,0,0.45);
+}
+
+/* base */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: normal 100%/1.625 Source Sans Pro, Arial, sans-serif;
+    color: #444;
+}
+
+a {
+    color: #537391;
+    text-decoration: none;
+}
+
+p {
+    margin: 15px 0;
+}
+
+/* content */
+
+.center {
+    width: 50%;
+    margin: 0 auto;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+article li {
+    margin-left: 20px;
+}
+
+h2 {
+    float: left;
+}
+
+.title-ribbon {
+    font-family: Lato;
+}
+
+p.meta {
+    position: relative;
+    text-align: right;
+    top: 8px;
+    right: 20px;
+    margin: 0 0 40px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+pre {
+    padding-left: 20px;
+    margin: 20px 0;
+    border-left: 2px solid #bbb;
+}
+
+img {
+    display: block;
+    max-width: 650px;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #ddd;
+}
+
+/* left menu */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 21%;
+    height: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    background: #fff;
+}
+
+/* every bar in the menu: the title and one per group */
+
+.side h1,
+.side h3 {
+    margin: 0 8px 8px;
+    background: var(--gloss), linear-gradient(var(--bar-top), var(--bar-bottom));
+    border-top: 1px solid rgba(255,255,255,0.45);
+    border-bottom: 1px solid var(--bar-edge);
+    border-radius: 8px;
+    box-shadow: var(--bevel);
+}
+
+.side h1 {
+    margin-bottom: 14px;
+    padding: 0.15em 0;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.side h3 {
+    position: relative;
+    z-index: 1;
+    height: 36px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.group-name {
+    flex: 1;
+    min-width: 0;
+    padding: 6px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.side h3:not(:has(#selected)) a {
+    color: #17232e;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.28), 0 -1px 1px rgba(0,0,0,0.55);
+}
+
+.side h3:hover {
+    filter: brightness(1.12);
+}
+
+.group-button,
+.group-button a {
+    height: 100%;
+}
+
+.group-button a {
+    display: flex;
+    align-items: center;
+    color: #dfe7ee;
+    font-family: Arial;
+    font-weight: 900;
+}
+
+.year {
+    align-self: stretch;
+    margin-right: 10px;
+    padding: 0 4px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    font-size: 0.72rem;
+    line-height: 1.4;
+}
+
+/* neon: the title and the selected group */
+
+.side h1 a,
+#selected a {
+    color: #fff;
+    font-family: 'Tilt Neon', Lato, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff7b0, 0 0 9px var(--neon),
+        0 0 14px #ffd21f;
+    animation: neon-flicker 6s infinite;
+}
+
+.side h1 a {
+    text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 6px #fff, 0 0 10px #fff7b0,
+        0 0 18px var(--neon), 0 0 30px #ffd21f, 0 0 50px #ffb300,
+        0 0 80px var(--neon-glow), 0 0 120px var(--neon-glow);
+}
+
+#selected .year {
+    font-family: Arial;
+    text-shadow: 0 0 4px var(--neon), 0 0 10px #ffd21f;
+}
+
+@keyframes neon-flicker {
+    0%, 18%, 22%, 62%, 64%, 100% { opacity: 1; }
+    20%, 63% { opacity: 0.78; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .side h1 a, #selected a { animation: none; }
+}
+
+/* post list under the selected group */
+
+.group-links {
+    margin: -14px 12px 10px;
+    padding: 20px 0 8px;
+    background: linear-gradient(to right, #e6eaed, #fff);
+    border-radius: 0 0 8px 8px;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.group-links li {
+    list-style: none;
+}
+
+.group-links a {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    color: #555;
+}
+
+.group-links a:hover {
+    color: #000;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    width: 25px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.month {
+    padding: 1px 0;
+    background: var(--badge);
+    color: #fff;
+    font-size: 0.68rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.day {
+    padding: 2px 0;
+    background: #fff;
+    font-size: 1.02rem;
+    font-weight: bold;
+}
