@@ -1,7 +1,7 @@
 :root {
-    --bar-top: #525530;
-    --bar-bottom: #67825b;
-    --bar-edge: #5c762b;
+    --bar-top: #696e35;
+    --bar-bottom: #899075;
+    --bar-edge: #646f4f;
     --badge: #886647;
     --neon: #ffe94d;
     --neon-glow: #ff9d00;
@@ -38,8 +38,11 @@ p {
 /* content */
 
 .center {
-    width: 50%;
-    margin: 0 auto;
+
+    max-width: 800px;
+    margin-left: 300px;
+    margin-top: 200px;
+    padding: 0 40px;
 }
 
 article {
@@ -87,7 +90,7 @@ img {
 header {
     position: fixed;
     top: 0;
-    width: 21%;
+    width: 300px;
     height: 100%;
     overflow: hidden;
     padding: 10px 0;
@@ -107,7 +110,7 @@ header {
 }
 
 .side h1 {
-    margin-bottom: 14px;
+    margin-bottom: 128px;
     padding: 0.15em 0;
     border-radius: 12px;
     text-align: center;
@@ -130,7 +133,7 @@ header {
 }
 
 .side h3:not(:has(#selected)) a {
-    color: #17232e;
+    color: #384732;
     text-shadow: 0 1px 0 rgba(255,255,255,0.28), 0 -1px 1px rgba(0,0,0,0.55);
 }
 
